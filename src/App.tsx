@@ -1,7 +1,14 @@
-import Card from "./components/Card";
+import Card, { CardBody } from "./components/Card";
+import List from "./components/List";
 
 function App() {
-  return <Card body={"Hola mundo!"} />;
+  const list = ["Goku", "Tanjiro", "Eren"];
+  return (
+    <Card>
+      <CardBody title="Hola mundo" text="Este es el texto" />
+      <List data={list} />
+    </Card>
+  );
 }
 
 export default App;
